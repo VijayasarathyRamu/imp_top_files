@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ji">0</h1>
+    <!-- <img src="./samosa.jfif" alt=""> -->
+     <img src="./car0.jfif" alt="" id='d1' width="200px" height="200px"><br><br>
+     <button type="button" id="d1" onclick="pre()">pre</button>
+     <button type="button" id="d1" onclick="next()">next</button>
+    <!-- <img src="./car.jfif" alt=""> -->
+    <script>
+        // let arr = ['./dosa.jfif','./idly.jfif','./samosa.jfif'];
+        let arr = ['./car1.jfif','./car2.jfif','./car3.jfif','./car4.jfif','./car5.jfif','./car6.jfif','./car7.jfif','./car8.jfif','./car9.jfif','./car.jfif']
+        let count = 1;
+        function next(){
+            
+            document.getElementById("d1").src = arr[count];
+            document.getElementById('ji').innerHTML = count;
+        }count++;
+        function pre(){
+            count--;
+            document.getElementById("d1").src = arr[count];
+            document.getElementById('ji').innerHTML = count;
+            
+        }
+        count--;
+    </script>
+</body>
+</html>

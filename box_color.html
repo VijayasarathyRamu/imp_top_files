@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .cell {
+      background-color: lightgray;
+      border: 1px solid #333;
+      /* cursor: pointer; */
+    }
+  </style>
+</head>
+<body>
+ 
+ 
+<div class="grid">
+  <div class="cell" id="1"></div>
+  <div class="cell" id="2"></div>
+  <div class="cell" id="3"></div>
+  <div class="cell" id="4"></div>
+  <div class="cell" id="5"></div>
+  <div class="cell" id="6"></div>
+  <div class="cell" id="7"></div>
+  <div class="cell" id="8"></div>
+  <div class="cell" id="9"></div>
+</div>  
+<br><br>
+<label for="h">select a cell no: </label>
+<input type="number" id="h" min="1" max="9">
+<br><br>
+<label for="">select a color</label>
+<input type="color" name="mycolor" id="color"><br><br>
+        <button type="button" onclick="changecolour()">Apply Select Background Color</button>
+<script>
+  function changecolour(){
+    colour = document.getElementById('color').value;
+    num_value = document.getElementById('h').value
+    if (1==num_value){
+        document.getElementById('1').style.backgroundColor = colour;
+    }else if (2==num_value){
+        document.getElementById('2').style.backgroundColor = colour;
+    }else if (3==num_value){
+        document.getElementById('3').style.backgroundColor = colour;
+    }else if (4==num_value){
+        document.getElementById('4').style.backgroundColor = colour;
+    }else if (5==num_value){
+        document.getElementById('5').style.backgroundColor = colour;
+    }else if (6==num_value){
+        document.getElementById('6').style.backgroundColor = colour;
+    }else if (7==num_value){
+        document.getElementById('7').style.backgroundColor = colour;
+    }else if (8==num_value){
+        document.getElementById('8').style.backgroundColor = colour;
+    }else if (9==num_value){
+        document.getElementById('9').style.backgroundColor = colour;
+    }
+  }
+</script>
+ 
+</body>
+</html>

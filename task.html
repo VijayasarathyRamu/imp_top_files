@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="d1" src="./samosa.jfif" alt="Samosa" height="200px" width="300px"><br>
+    <strong id="s">Samosa</strong><br><br>
+
+    <button type="button" onclick="changeimg()">Idly</button>
+    <button type="button" onclick="changeimg1()">dosa</button>
+    <button type="button" onclick="changeimg2()">samosa</button>
+    <script>
+        function changeimg(){
+            document.getElementById("d1").src = "./idly.jfif";
+            document.getElementById("s").innerHTML = "Idly"
+            
+        }
+        function changeimg1(){
+            document.getElementById("d1").src = "./dosa.jfif";
+            document.getElementById("s").innerHTML = "dosa"
+            
+        }
+        function changeimg2(){
+            document.getElementById("d1").src = "./samosa.jfif";
+            document.getElementById("s").innerHTML = "Samosa"
+            
+        }
+
+
+
+    </script>
+</body>
+</html>

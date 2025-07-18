@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="d0" src="./index.webp" alt="" height="400px" width="500px"><br>
+    <strong id="d1">World Wonders</strong>
+        <button id="d2" type="button" onclick="changeImage('prev')">Prev</button>
+        <button id="d3" type="button" onclick="changeImage('next')">Next</button>
+   
+    <script>
+        let images =["./GWC.webp","./Chichen itza.webp","./christ.webp","./machu picchu-1387848629.webp","./Petra.webp","./taj mahal.webp","./the colloseum.webp","./index.webp"];
+        let names =["Great wall of china","Chichen Itza","christ","Machu picchu","petra","taj mahal","The colloseum","index Page"];
+        count = 0  
+        function changeImage(direction){
+                if(direction == 'next'){
+                    count++;
+                    document.getElementById("d0").src = images[count];
+                    document.getElementById("d1").innerHTML = names[count];
+                   
+                }
+                else if(direction == 'prev'){
+                    count--;
+                    document.getElementById("d0").src = images[count];
+                    document.getElementById("d1").innerHTML = names[count];
+               
+                }
+ 
+        }
+    </script>
+ 
+</body>
+</html>

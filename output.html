@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h1 id="d2">Chennai</h1>
+    <h1 id="d3">India</h1>
+
+    <button type="button" onclick="changedata()">Click to Change</button><br><br>
+    <button type="button" onclick="green()">Green</button><br><br>
+    <button type="button" onclick="blue()">Blue</button><br><br>
+    <button type="button" onclick="red()">Red</button><br><br>
+    <script>
+        function changedata(){
+            document.getElementById("d2").innerHTML = "Tamil Nadu";
+            
+        }
+        function red(){
+            document.getElementById("d2").style.color = "red";
+        }
+        function green(){
+            document.getElementById("d2").style.color = "green";
+        }
+        function blue(){
+            document.getElementById("d2").style.color = "blue";
+        }
+
+
+        //1.document.write()
+        // document.write("Hello Friends <br>");
+        //2.wndow.alert()
+        // window.alert("Good Evening");
+        //3.console.log
+        console.log("hi");
+        //4.innerHTML: it is use to insert, fetch data inside
+        document.getElementById("d1").innerHTML = "Hi Everyone";
+        document.getElementById("d2").style.color = "red";
+        let data = document.getElementById("d3").innerHTML;
+        console.log(data)
+    </script>
+</body>
+</html>

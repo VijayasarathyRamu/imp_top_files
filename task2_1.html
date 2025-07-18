@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="d1" src="./samosa.jfif" alt="Samosa" height="200px" width="300px"><br>
+    <strong id="s">Samosa</strong><br><br>
+
+    <button type="button" onclick="changeimg('./idly.jfif','Idly')">Idly</button>
+    <button type="button" onclick="changeimg('./dosa.jfif','Dosa')">dosa</button>
+    <button type="button" onclick="changeimg('./samosa.jfif','Samosa')">samosa</button>
+    <script>
+        function changeimg(img,name){
+            document.getElementById("d1").src = img;
+            document.getElementById("s").innerHTML = name;   
+        }
+    </script>
+</body>
+</html>

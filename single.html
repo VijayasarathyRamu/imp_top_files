@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h1 id="d2">Chennai</h1>
+    <h1 id="d3">India</h1>
+
+    <button type="button" onclick="changedata()">Click to Change</button><br><br>
+    <button type="button" onclick="changecolor()">Green</button><br><br>
+    <button type="button" onclick="changecolor()">Blue</button><br><br>
+    <button type="button" onclick="changecolor()">Red</button><br><br>
+    <script>
+        function changedata(){
+            document.getElementById("d2").innerHTML = "Tamil Nadu";
+            
+        }
+        let count = 0;
+        function Count(color){
+            return document.getElementById("d2").style.color=color;
+        }
+        function changecolor(){
+            count++;
+            let color;
+            switch(count){
+                case 1:
+                    color='green'
+                    break;
+                case 2:
+                    color='blue'
+                    break;
+                case 3:
+                    color="red"
+                    break;
+            }
+            Count(color)
+        }
+    </script>
+</body>
+</html>
